@@ -1,8 +1,8 @@
-<ul class="nav nav-pills categories navbar-inverse gray">
+<ul class="nav nav-pills categories navbar-inverse gray services-text">
     <li><a ng-click="viewMechanic()" ng-class="{active: mechanic}">Mechanic </a></li>
     <li><a ng-click="viewRates()" ng-class="{active: rates}">Rates</a></li>
 </ul>
-<div ng-show="mechanic" class="container post">
+<div ng-show="mechanic" class="container post white">
     <div class="row">
         <div class="col-md-6 post-title">
             <div class="mechanic sizing"><img src="../images/ryan.jpg"></div>            
@@ -23,4 +23,6 @@
     </div>
 </div>
 
-<div ng-show="rates">Hey!</div>
+<div ng-show="rates">
+    <h1>Rates</h1>
+</div>

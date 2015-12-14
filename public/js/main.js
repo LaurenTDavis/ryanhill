@@ -17,11 +17,14 @@ angular.module('App')
 				templateUrl : '/html/gallery.html',
 				controller : 'mainController'
 			})
+			.when('/testimonials', {
+				templateUrl : '/html/testimonials.html',
+				controller : 'mainController'
+			})
 			.when('/contact', {
 				templateUrl : '/html/contact.html',
 				controller : 'mainController'
 			})
-			
 
 	}])
 
