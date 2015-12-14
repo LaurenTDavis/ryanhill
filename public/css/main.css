@@ -1,7 +1,12 @@
-header{
-  height:500px;
+.header-img {
+  height: 500px;
   background:url(../images/truck.jpg) no-repeat center;
   background-size:cover;
+
+}
+.black {
+  background-color: #222222;
+  height: 500px;
 }
 .gray a {
   color: #A5A5A5;
@@ -10,7 +15,7 @@ header{
 .logo {
   height: 220px;
   width: 210px;
- 
+
   text-align: center;
   position: relative;
   left: 60px;
@@ -23,12 +28,14 @@ header{
   text-transform: uppercase;
   font-weight: bold;
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 .logo-phone {
   margin: 0;
   padding: 0;
+  font-size: 30px;
+  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
 .nav-logo img {
@@ -37,6 +44,12 @@ header{
 }
 .nav-text {
   text-align: center;
+}
+
+.header-desc {
+  color: white;
+  font-size: 25px;
+  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
 .navbar-default {
@@ -122,7 +135,6 @@ nav.navbar.navbar-default{
 .categories{
   text-align:center !important;
   margin-bottom:20px;
-  border-bottom:1px solid #e4e4e4;
   padding:10px;
 }
 
@@ -194,13 +206,18 @@ div.container.post{
 }
 
 @media all and (max-width: 960px) {
-  .sizing {
-    padding: 0 20px;
+  .logo {
+    left: 240px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
+  .header-img {
+    height: 600px;
+  }
+  .logo {
+    left: 60px;
+  }
   .gallery img {
     display: block;
     margin: 10px auto;
@@ -209,7 +226,7 @@ div.container.post{
     display: block;
     margin: 10px auto;
     width: 100%;
-    margin: auto;
+    height: 300px;
   }
 
 }
