@@ -31,7 +31,17 @@ angular.module('App')
 angular.module('App')
 	.controller('mainController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 	
-	$scope.greeting = "hello";
+	$scope.company = "Hill Country Mobile";	
+
+	$scope.mechanic = true; 
+	$scope.viewMechanic = function() {
+		$scope.rates = false;
+		$scope.mechanic = true;
+	}
+	$scope.viewRates = function() {
+		$scope.rates = true;
+		$scope.mechanic = false;
+	}
 
 }])
 

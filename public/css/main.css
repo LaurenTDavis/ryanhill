@@ -1,20 +1,49 @@
 header{
-  height:400px;
+  height:500px;
   background:url(../images/truck.jpg) no-repeat center;
   background-size:cover;
 }
+.gray a {
+  color: #A5A5A5;
+}
 
+.logo {
+  height: 220px;
+  width: 210px;
+ 
+  text-align: center;
+  position: relative;
+  left: 60px;
+}
 
-.logo img{
-  height: 200px;
-  width: 220px;
+.logo-text {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.logo-phone {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 50px;
+}
+.nav-text {
+  text-align: center;
 }
 
 .navbar-default {
  border-color: rgba(231, 231, 231, 0);
 }
 .navbar-nav{
-  margin-top:14px;
+  margin-top:7px;
 }
 
 .navbar-nav .nav li{
@@ -28,7 +57,7 @@ header{
 }
 
 .navbar-default .navbar-nav > li > a{
-  color:#333;
+  color: black;
   font-weight:bold;
   background-color:rgba(255,255,255,0.4);
 }
@@ -155,3 +184,32 @@ div.container.post{
   margin-bottom:50px;
 }
 
+.mechanic img{
+  height: 600px;
+  width: 500px;
+}
+.sizing {
+  max-width: 960px;
+  margin: auto;
+}
+
+@media all and (max-width: 960px) {
+  .sizing {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .gallery img {
+    display: block;
+    margin: 10px auto;
+  }
+  .mechanic img {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    margin: auto;
+  }
+
+}
