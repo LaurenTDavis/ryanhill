@@ -2,7 +2,7 @@ angular.module('App', ['ngRoute']);
 
 
 angular.module('App')
-	.config(['$routeProvider', function($routeProvider){
+	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 		// No need to define #, it is assumed
 		$routeProvider
 			.when('/', {
@@ -24,7 +24,9 @@ angular.module('App')
 			.when('/contact', {
 				templateUrl : '/html/contact.html',
 				controller : 'mainController'
-			})
+			});
+
+		// $locationProvider.html5Mode(true);
 
 	}])
 

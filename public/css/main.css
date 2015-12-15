@@ -279,10 +279,11 @@ div.container.post{
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    background-color: black;
+  .header-img {
+    height: 511px;
+
   }
- .darkgrey {
+  .darkgrey {
     color: black;
     font-weight: bold;
     background-color: rgba(255,255,255,0.4);
@@ -318,9 +319,7 @@ div.container.post{
 .span3 {
   width: 220px;
 }
-spanky {
 
-}
 
 .tiny {
     float: left;
@@ -589,11 +588,11 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
   float: left;
   width: 100%;
   min-height: 30px;
-  margin-left: 2.127659574468085%;
+/*  margin-left: 2.127659574468085%;
   *margin-left: 2.074468085106383%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+*/  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .row-fluid [class*="span"]:first-child {
@@ -800,4 +799,77 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
     width: 23.404255319148934%;
   *width: 23.351063829787233%;
 }
+.row-fluid [class*="span"] {
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+}
+
+}
+
+.push-left {
+  left: 50px;
+}
+.room {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+/*Contact Page*/
+.book {
+  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.circle {
+  border-radius: 10em;
+  background-color: #43A4F8;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.icon-position {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.name-position {
+  position: absolute;
+  top: -4px;
+  left: 44px;
+}
+.call-position {
+  position: absolute;
+  top: -55px;
+  left: 25px;
+}
+
+.email-position {
+  position: absolute;
+  top: -55px;
+  left: 15px;
+}
+.follow-position {
+  position: absolute;
+  top: -55px;
+  left: 3px;
+}
+
+.phone {
+  position: absolute;
+  top: 147px;
+  left: 9px;
+  font-size: 19px;
+}
+
+.email {
+  position: absolute;
+  top: 147px;
+  font-size: 17px;
+  left: -47px;
 }
