@@ -43,6 +43,9 @@
   font-size: 40px;
   color: rgba(51, 51, 51, 0);
 }
+.invisible-old {
+  color: rgba(51, 51, 51, 0);
+}
 
 .logo-text {
   font-size: 20px;
@@ -168,8 +171,8 @@ nav.navbar.navbar-default{
 
 .categories{
   text-align:center !important;
-  margin-bottom:20px;
-  padding:10px;
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 
 .categories li{
@@ -257,6 +260,15 @@ div.container.post{
 }
 
 
+.vertical {
+  height: 400px;
+  width: 300px;
+}
+
+
+
+
+
 @media all and (max-width: 991px) {
   .logo {
     left: 240px;
@@ -307,7 +319,7 @@ div.container.post{
   width: 220px;
 }
 spanky {
-  
+
 }
 
 .tiny {
