@@ -49,12 +49,59 @@ angular.module('App')
 	}
 
 	$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-        $(this).collapse('hide');
-    }
-});
+    	if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        	$(this).collapse('hide');
+    	}
+	});
 
+	$(document).ready(function(){
+    
+    	$("[data-toggle=tooltip]").tooltip();
+	});
+	 
+
+
+	$scope.task = {
+        title       : '',
+        description : '',
+    }
+
+    $scope.tasks = []
+    $scope.submitTask = function(){
+        console.log('submit a task!')
+        $http({
+            method : 'POST',
+            url    : '/form-submit',
+            data   : $scope.task
+        }).then(function(returnData){
+            console.log(returnData)
+        }, function(error){
+            console.log('error!', error)
+        })
+    }
+
+    $scope.getTasks = function(){
+        $http({
+            method : 'GET',
+            url    : '/tasks'
+        }).then(function(returnData){
+            $scope.tasks = returnData.data
+        }, function(error){
+            console.log('error! ', error)
+        })
+    }
+
+    setInterval($scope.getTasks, 1000)
+
+
+    $scope.clear = function() {
+    	console.log("Clear")
+		document.getElementById("txtComment").value = "";
+		document.getElementById("nameComment").value = "";
+
+    }
 }])
+
 
 
 
