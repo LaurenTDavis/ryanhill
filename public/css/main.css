@@ -250,9 +250,10 @@ div.container.post{
   font-size: 18px;
 }
 .services-list {
-  font-size: 20px;
+  font-size: 22px;
   list-style-type: square;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+  text-transform: uppercase;
 }
 .img-padding {
   display: inline-block;
@@ -449,7 +450,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
     padding-bottom: 10px;
 }
 
-.pricing-table-signup-tiny a {
+.pricing-table-signup-tiny li {
     display: inline-block;
     width:50%;
     height: 50px;
@@ -480,7 +481,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
     padding-bottom: 10px;
 }
 
-.pricing-table-signup-small a {
+.pricing-table-signup-small li{
     display: inline-block;
     width:50%;
     height: 50px;
