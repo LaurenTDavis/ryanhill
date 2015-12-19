@@ -278,6 +278,9 @@ div.container.post{
   .invisible, .invisible-new {
     font-size: 10px;
   }
+  .header-img {
+    height: 560px;
+  }
 }
 
 @media screen and (max-width: 480px) {
