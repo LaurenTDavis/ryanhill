@@ -279,13 +279,16 @@ div.container.post{
     font-size: 10px;
   }
   .header-img {
-    height: 560px;
+    height: 593px;
+  }
+  .categories {
+      margin-top: 150px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .header-img {
-    height: 511px;
+    height: 615px;
 
   }
   .darkgrey {
