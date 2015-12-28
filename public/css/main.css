@@ -28,6 +28,19 @@
   float: left;
 }
 
+.grey {
+  font-weight: 700;
+  color: white;
+  background-color: #954B43; 
+  height: 400px;
+  width:700px;
+}
+
+.motto {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+  vertical-align: center;
+  font-size: 35px;
+}
 .logo {
   height: 220px;
   width: 210px;
@@ -236,7 +249,7 @@ div.container.post{
 
 /* Home Page */
 .mechanic img{
-  height: 600px;
+  height: 550px;
   width: 400px;
 }
 .sizing {
