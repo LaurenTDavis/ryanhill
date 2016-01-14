@@ -87,7 +87,7 @@ angular.module('App')
         }).then(function(returnData){
             $scope.tasks = returnData.data
         }, function(error){
-            console.log('error! ', error)
+            // console.log('error! ', error)
         })
     }
 
