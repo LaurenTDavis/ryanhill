@@ -38,7 +38,7 @@ angular.module('App')
 	
 	$scope.company = "Hill Country Mobile";	
 
-	$scope.mechanic = true; 
+	$scope.rates = true; 
 	$scope.viewMechanic = function() {
 		$scope.rates = false;
 		$scope.mechanic = true;
